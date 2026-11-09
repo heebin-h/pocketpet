@@ -275,6 +275,8 @@ LED (Pin21 LED_NOTI):
 
 ## 6. 기구 설계 (CAD)
 
+> ⚠️ **2026-11-10 기획서 D11로 외관이 "가로 포켓 플레이어"(약 120×62×30mm)로 변경됨.** 아래 박스형(100×90×62) CAD는 구버전 — 기획 승인 후 M2에서 재설계해 대체한다. 스피커도 40mm 원형 → 슬림 직사각형으로 변경 예정 (기획서 §6.5).
+
 원본: `/Users/heebiny/diyProj/pocketpet/beatling/hw/cad/beatling_enclosure.py` (FreeCAD 1.x `freecadcmd`로 실행)
 
 ### 6.1 구성

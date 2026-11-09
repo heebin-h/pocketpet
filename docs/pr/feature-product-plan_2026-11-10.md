@@ -1,4 +1,4 @@
-# PR: BEATLING 기획서 v0.1 — 승인 요청
+# PR: BEATLING 기획서 v0.2 — 승인 요청
 
 - base: `develop` ← head: `feature/product-plan`
 - 머지 방식: Create a merge commit
@@ -28,11 +28,13 @@
 - [ ] D7 QR 카드 — 이 저장소 GitHub Pages
 - [ ] D8 시간 조작 — 경과 0 + "어지러움" 연출
 - [ ] D9 SW 언어 — Python 3
-- [ ] **D10 아트·사운드 제작 주체 — 권장안 없음, 지정 필요**
+- [x] D10 아트·사운드 — **사용자 + Claude 공동 제작** (결정됨)
+- [x] D11 외관 — **가로 포켓 플레이어** (결정됨, 기획서 §6.5)
 
 ## 변경 파일
 
-- `beatling/기획서.md` (신규)
+- `beatling/기획서.md` (신규, v0.2)
+- `beatling/hw/HW-개발계획서.md` — §6에 외관 변경(D11) 안내 추가
 - `.gitignore` — `.omc/` 추가 (로컬 도구 상태 디렉터리)
 - `docs/pr/feature-product-plan_2026-11-10.md` (이 PR 설명 초안)
 
