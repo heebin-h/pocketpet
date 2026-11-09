@@ -1,0 +1,5 @@
+# CAD 출력물 — beatling/hw/cad/beatling_enclosure.py 로 재생성
+beatling/hw/cad/out/
+
+.DS_Store
+__pycache__/
