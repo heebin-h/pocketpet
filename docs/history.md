@@ -2,6 +2,13 @@
 
 체크리스트는 `/Users/heebiny/diyProj/pocketpet/docs/roadmap.md`에 있다. 최신 항목이 위에 온다.
 
+## 2026-11-15 — 기획 승인(M0 완료), CAD 브랜치 rebase
+
+- 기획서 v0.3 (`4bc12fe`): 리뷰 R1·R2·R7 반영, §6.5·§9·§12를 CAD 1차 결과에 맞춤. 리뷰 문서도 이 브랜치에 포함.
+- D1~D9를 사용자가 권장안 그대로 승인했고(`9c7a926`), PR #1 머지(`f53483c`)로 M0 완료. R3·R4·R5·R8은 M3 전 결정 항목으로 이관했다(roadmap M0).
+- `feature/cad-pocket-enclosure`를 develop 위로 rebase했다. 충돌은 없었다. 리뷰 문서는 develop과 내용이 같아서 diff에서 빠졌다. rebase 후 CAD 재검사 결과는 RESULT: PASS.
+- `layout.svg` 출력 고정: `svg.hashsalt`를 지정하고 Date 메타데이터를 제거했다. 2회 연속 실행 md5 일치를 확인했다. 재실행마다 생기던 diff를 막기 위한 조치다.
+
 ## 2026-11-14 — 기획서 v0.2 리뷰 + 가로 포켓 함체 CAD 1차 (`feature/cad-pocket-enclosure`)
 
 **리뷰** — `/Users/heebiny/diyProj/pocketpet/docs/review/기획서-v0.2-리뷰_2026-11-14.md`

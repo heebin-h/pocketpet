@@ -515,6 +515,7 @@ def write_layout(dummies, path):
         font_manager.fontManager.addfont(font)
         matplotlib.rcParams["font.family"] = font_manager.FontProperties(fname=font).get_name()
     matplotlib.rcParams["svg.fonttype"] = "none"
+    matplotlib.rcParams["svg.hashsalt"] = "beatling"   # 재실행 시 id 고정 (git diff 최소화)
 
     colors = {"cover": "#d9822b", "shell": "#2b7bd9"}
     fig, axes = plt.subplots(1, 3, figsize=(18, 6.5),
@@ -547,7 +548,7 @@ def write_layout(dummies, path):
     fig.suptitle("BEATLING pocket enclosure %gx%gx%g mm — 파랑: 쉘 장착 / 주황: 뒤판 장착 / ○ 코너 보스"
                  % (W, H, D), fontsize=10)
     fig.tight_layout()
-    fig.savefig(path)
+    fig.savefig(path, metadata={"Date": None})
     fig.savefig(os.path.join(OUT_DIR, "layout.png"), dpi=110)
     plt.close(fig)
     log("layout: " + path)
